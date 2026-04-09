@@ -1,16 +1,16 @@
 # antigravity-sync-daemon
 
-A lightweight, cross-platform daemon to sync **Antigravity LLM chats** in real-time.
+A lightweight, cross-platform Rust daemon to sync Antigravity LLM chats in real-time using Neon DB.
 
 ## Overview
 
-`antigravity-sync-daemon` is a background service built entirely in **Rust**, designed to run on multiple platforms (Linux, macOS, Windows) with minimal resource footprint. It keeps your Antigravity conversation history synchronized across devices in real-time using **[Turso](https://turso.tech/)** — an edge-native distributed database built on libSQL.
+`antigravity-sync-daemon` is a background service built entirely in **Rust**, designed to run on multiple platforms (Linux, macOS, Windows) with minimal resource footprint. It keeps your Antigravity conversation history synchronized across devices in real-time using **[Neon DB](https://neon.tech/)** — a serverless PostgreSQL platform built for modern, cloud-native applications.
 
 ## Key Features
 
 - ⚡ **Real-time sync** — Pushes and pulls chat changes as they happen
 - 🦀 **Built in Rust** — Memory-safe, blazing-fast, and cross-platform from day one
-- 🌍 **Edge-first storage** — Powered by Turso DB for low-latency, globally distributed reads
+- 🐘 **PostgreSQL-powered storage** — Backed by Neon DB for scalable, serverless PostgreSQL
 - 🔌 **Daemon architecture** — Runs silently in the background, no UI required
 - 🔒 **Secure by default** — End-to-end encryption for all synced data
 
@@ -19,7 +19,7 @@ A lightweight, cross-platform daemon to sync **Antigravity LLM chats** in real-t
 | Layer | Technology |
 |-------|-----------|
 | Language | Rust |
-| Database | Turso (libSQL) |
+| Database | Neon DB (PostgreSQL) |
 | Sync Protocol | Custom binary protocol over WebSocket |
 | Packaging | Cargo / cross-rs |
 
